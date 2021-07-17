@@ -1,0 +1,92 @@
+.components-listitem {
+  height: 60px;
+
+  border-bottom: 1px solid #ddd;
+  // text-indent: 10px;
+  cursor: pointer;
+
+  &.focus {
+    color: #2f9842;
+  }
+  .asd {
+    margin-left: 8px;
+
+    img {
+      width: 3.8em;
+      height: 3.8em;
+      margin-top: 2.5px;
+    }
+  }
+}
+.heart {
+  position: relative;
+  top: 10px;
+  left: 80%;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png")
+    no-repeat;
+
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+
+  &.is-active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+  }
+}
+.placement {
+  position: relative;
+  height: 60px;
+}
+.components-listitem:hover {
+  background: rgb(190, 185, 185);
+  color: black;
+}
+.contain {
+  width: 60%;
+  margin: auto;
+  display: flexbox;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  flex-wrap: wrap;
+  background-color: rgb(14, 12, 9);
+  color: #ddd;
+}
+@media only screen and (max-width: 375px) {
+  .contain {
+    margin: auto;
+    display: flexbox;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex-wrap: wrap;
+    background-color: rgb(14, 12, 9);
+    color: #ddd;
+    width: 98%;
+  }
+  .asd {
+    // margin-left: 2px;
+
+    img {
+      width: 3em;
+      height: 3em;
+    }
+  }
+  .heart {
+    position: relative;
+    top: 5px;
+    left: 66%;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png")
+      no-repeat;
+
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+
+    &.is-active {
+      transition-duration: 1s;
+      background-position: -2800px 0;
+    }
+  }
+  .placement {
+    position: relative;
+    height: 60px;
+  }
+}

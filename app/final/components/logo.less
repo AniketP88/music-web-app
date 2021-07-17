@@ -1,0 +1,31 @@
+.components-logo {
+  box-sizing: border-box;
+  padding: 15px 25px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  .caption {
+    font-size: 24px;
+    text-indent: 20px;
+    font-family: Blippo, fantasy;
+    font-weight: 500;
+  }
+}
+.heart {
+  width: 100px;
+  height: 100px;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png")
+    no-repeat;
+
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+
+  &.is-active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+  }
+}
+.placement {
+  transform: translate(-50%, -50%);
+}
